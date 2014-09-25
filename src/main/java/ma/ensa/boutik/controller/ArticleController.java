@@ -101,16 +101,19 @@ public class ArticleController {
 	}
 
 	@RequestMapping(value = "actionModifArticle", method = RequestMethod.POST)
-	public String actionModdifierArticle(
-			@ModelAttribute("article") Article article,
-			@RequestParam("idRubrique") Long idRubrique,
-			@RequestParam("reference") String idArticle) {
-		article.setIdArticle(idArticle);
-		Rubrique rubrique=rubriqueService.findByPk(idRubrique);
-		article.setRubrique(rubrique);
-		//article= articleService.findByPk(idArticle);
-		//System.out.println("Article : "+article.getAuteur());
-		articleService.merge(article);
+	public String actionModdifierArticle(@ModelAttribute("article") Article article){
+		
+		final Article articleModif =articleService.findByPk(article.getIdArticle());
+		articleModif.setAuteur(article.getAuteur());
+		articleModif.setDescription(article.getDescription());
+		articleModif.setPrix(article.getPrix());
+		articleModif.setTitre(article.getTitre());
+		
+		final Rubrique rubrique = rubriqueService.findByPk(article.getRubrique().getId());
+		articleModif.setRubrique(rubrique);
+	
+		articleService.merge(articleModif); 
+		
 		modelAndView.addObject("message",
 				"Modification effectuer avec succes ! ");
 		return "redirect:/articles";
