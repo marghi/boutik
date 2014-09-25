@@ -7,47 +7,45 @@
 	
 <div class="divForm">
 
-<form id="formID" class="formular" method="POST" action="actionAjouArticle">
+<form:form id="formID" class="formular" method="POST" modelAttribute="article" action="actionAjouArticle">
 	<table>
 		<tr >
 			<td>Référence</td>
-			<td><input type="text" name="reference"></td>
+			<td><form:input type="text" path="idArticle" /></td>
 		</tr>
 		
 		<tr >
 			<td>Titre</td>
-			<td><input type="text" name="titre"></td>
+			<td><form:input type="text" path="titre" /></td>
 		</tr>
 		
 		<tr >
 			<td>Auteur</td>
-			<td><input type="text" name="auteur"></td>
+			<td><form:input type="text" path="auteur" /></td>
 		</tr>
 		
 		<tr >
 			<td>Description</td>
-			<td><input type="text" name="description"></td>
+			<td><form:input type="text" path="description" /></td>
 		</tr>
 		
 		<tr >
 			<td>Prix</td>
-			<td><input type="text" name="prix"></td>
+			<td><form:input type="text" path="prix" /></td>
 		</tr>
 		
 		<tr >
 			<td>Thème</td>
 			<td>
-				<select name="idRubrique">
-					<c:forEach items="${rubriques }" var="rubrique">
-						<option value="${rubrique.id }">${rubrique.theme }</option>
-					</c:forEach>
-				</select>
+				<form:select path="rubrique.id">
+					<form:options items="${rubriques}" itemLabel="theme" itemValue="id" />
+				</form:select>
 			</td>
 		</tr>		
 					
 	</table>
 	
 	<input type="submit" value="Ajouter">
-</form>
+</form:form>
 
 </div>

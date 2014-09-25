@@ -60,29 +60,18 @@ public class ArticleController {
 	}
 
 	@RequestMapping(value = "ajouArticle", method = RequestMethod.GET)
-	public ModelAndView ajouterArticle() {
+	public ModelAndView ajouterArticle(@ModelAttribute("article") Article article) {
 		modelAndView.addObject("rubriques", rubriqueService.findAll());
 		modelAndView.setViewName(".ajouArticle");
 		return modelAndView;
 	}
 	
 	@RequestMapping(value = "actionAjouArticle", method = RequestMethod.POST)
-	public String actionAjouterArticle(
-			 @RequestParam("reference") String reference,
-			 @RequestParam("titre") String titre,
-			 @RequestParam("auteur") String auteur,
-			 @RequestParam("description") String description,
-			 @RequestParam("prix") Double prix,
-			 @RequestParam("idRubrique") Long idRubrique
-			) {
-		Article article=new Article();
-		article.setIdArticle(reference);
-		article.setTitre(titre);
-		article.setAuteur(auteur);
-		article.setDescription(description);
-		article.setPrix(prix);
-		Rubrique rubrique=rubriqueService.findByPk(idRubrique);
+	public String actionAjouterArticle(@ModelAttribute("articlee") final Article article) {
+		
+		Rubrique rubrique=rubriqueService.findByPk(article.getRubrique().getId());
 		article.setRubrique(rubrique);
+		
 		articleService.merge(article);
 		logger.debug("Ok !");
 		return "redirect:/articles";
