@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 /**
  * Client dao test.
+ *
  * @author dmarghi
  *
  */
