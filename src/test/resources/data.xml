@@ -1,0 +1,58 @@
+<!DOCTYPE dataset SYSTEM "dataset.dtd">
+<dataset>
+	<table name="client">
+		<column>email</column>
+		<column>adresse</column>
+		<column>cp</column>										
+		<column>enabled</column>
+		<column>nom</column>
+		<column>password</column>
+		<column>prenom</column>
+		<column>role</column>
+		<column>tel</column>
+		<column>ville</column>
+		<row>
+			<value>aa@aa.aa</value>
+			<value>aa</value>
+			<value>aa</value>
+			<value>1</value>
+			<value>aaa</value>
+			<value>aa</value>
+			<value>aa</value>
+			<value>aa</value>
+			<value>21</value>
+			<value>23</value>
+			<value>24</value>
+		</row>	
+	</table>
+
+	<table name="rubrique">  						
+		<column>id_rubrique</column>
+		<column>theme</column>
+
+		<row>
+			<value>1</value>
+			<value>aa</value>
+		</row>	
+	</table>
+
+	<table name="article">  					
+		<column>id_article</column>
+		<column>auteur</column>
+		<column>description</column>										
+		<column>prix</column>
+		<column>titre</column>
+		<column>rubrique</column>
+
+		<row>
+			<value>aa</value>
+			<value>aa</value>
+			<value>aa</value>
+			<value>12.4</value>
+			<value>aa</value>
+			<value>1</value>
+		</row>	
+	</table>
+	
+
+</dataset>

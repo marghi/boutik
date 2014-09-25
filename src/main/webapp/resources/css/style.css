@@ -1,0 +1,166 @@
+#headerContent {
+	display:block;
+	float:left;
+	font-family: Verdana;
+	width: 100%;
+	margin: 0;
+	padding: 3px;
+	font-size: 10px;
+	font-weight: bold;
+	color: #FFF;
+	background: #2C4056;
+}
+
+#headerContent a {
+	margin-right: 5px;
+	color: #FFF;
+	text-decoration: none;
+	outline: none !important;
+}
+
+#headerContent a:hover {
+	text-decoration: underline;
+}
+
+#userTools {
+	float: right;
+	margin-right: 10px;
+}
+
+#userTools span {
+	margin-right: 20px;
+}
+
+#userTools label {
+	font-weight: normal;
+}
+
+.tableForm {
+	width: 100%;
+	margin-top:5px;
+	margin-bottom:5px;
+}
+
+.tableForm tbody, .tableForm thead	{
+	display: block;
+	float: left;
+	width: 100%;
+}
+
+.divForm{
+	width:98.5%;
+	
+}
+
+.tableForm tbody tr{
+	background: #e0e0db;
+}
+
+.tableForm th, .tableForm td{
+	display: block;
+	float: left;
+	text-align: center;
+	border: none;
+	margin: 0;
+}
+
+
+.tableForm tr{
+	display: block;
+	float: left;
+	width: 100%;
+	padding: 3px;
+	border: none;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.tableForm th {	
+	color: black;
+	background-color: rgb(226,237,251);
+}
+
+.tableForm input[type=text] , .tableForm input[type=password] {
+	width: 90%;
+}
+
+#titleBar {
+	font-size: 24px;
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+	padding-top: 40px;
+	height: 40px;
+	border-bottom: 1px solid #bbbbbb;
+}
+.actionBarElement {
+	width: 90%;
+	float: left;
+	
+}
+
+#actionBar a {
+	float: left;
+	margin-right: 10px;
+	padding-top: 2px;
+	color: #000;
+	text-decoration: none;
+	outline: none !important;
+	line-height: 1.6em;
+}
+
+#actionBar a:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+#actionBar a label:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+#actionBar span {
+	display: block;
+	float: left;
+}
+
+#actionBar .add {
+	background-image: url("../images/actionBarIcon/ui-icons_green.png");
+}
+
+#actionBar .save {
+	background-image: url("../images/actionBarIcon/ui-icons_green.png");
+}
+
+#actionBar .modif{
+	background-image: url("../images/actionBarIcon/ui-icons_orange.png");
+}
+
+#actionBar .sup {
+	background-image: url("../images/actionBarIcon/ui-icons_red.png");
+}
+#actionBar .print{
+	background-image: url("../images/actionBarIcon/ui-icons_green.png");
+}
+#actionBar .aperçu{
+	background-image: url("../images/actionBarIcon/ui-icons_orange.png");
+}
+#actionBar .reglage{
+	background-image: url("../images/actionBarIcon/ui-icons_red.png");
+}
+#divChargerSignature{
+/*	height: 20px;*/
+/*	width: 20px;*/
+}
+#mmTd{
+	width: 60px;
+}
+#spinnerTd{
+	margin:-5px;
+	
+}
+
+#tableEntreprise tbody tr:hover {
+	cursor: pointer;
+	background: #c4c4c4;
+}

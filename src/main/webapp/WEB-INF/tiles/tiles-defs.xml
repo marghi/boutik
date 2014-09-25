@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+
+	<!-- Template de chaque page de l'application -->
+	<definition name=".layout" template="/WEB-INF/views/layout/layout.jsp">
+		<put-attribute name="header" value="/WEB-INF/views/layout/header.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/views/layout/menu.jsp" />
+		<put-attribute name="content" value="$(content)" />
+		<put-attribute name="footer" value="/WEB-INF/views/layout/footer.jsp" />
+	</definition>
+
+	<!-- Non sécurisé ci-dessous -->
+	<!-- Page d'index / -->
+	<definition name=".index" extends=".layout">
+		<put-attribute name="content" value="/WEB-INF/views/accueil/index.jsp" />
+	</definition>
+
+	<!-- Non sécurisé ci-dessous -->
+	<!-- Page d'index / -->
+	<definition name=".login" extends=".layout">
+		<put-attribute name="content" value="/WEB-INF/views/user/login.jsp" />
+	</definition>
+	
+	<!--CompteUtilisateur -->
+	<definition name=".user.formulaireCreation" extends=".layout">
+		<put-attribute name="content" value="/WEB-INF/views/user/formulaireCreationCompteUtilisateur.jsp" />
+	</definition>
+
+	<!--Articles  -->
+	<definition name=".articles" extends=".layout">
+		<put-attribute name="content" value="/WEB-INF/views/articles/Articles.jsp" />
+	</definition>
+
+	<!--Ajouter Articles  -->
+	<definition name=".ajouArticle" extends=".layout">
+		<put-attribute name="content" value="/WEB-INF/views/articles/AjouArticle.jsp" />
+	</definition>
+	
+	<!--Modifier Articles  -->
+	<definition name=".modifierArticle" extends=".layout">
+		<put-attribute name="content" value="/WEB-INF/views/articles/ModifierArticle.jsp" />
+	</definition>
+	
+	
+	
+	
+	
+	
+	
+	<definition name=".user.home" template="/WEB-INF/views/user/userLayout.jsp">
+		<put-attribute name="user" value="/WEB-INF/views/accueil/index.jsp" />
+		<put-attribute name="detailUser" value=".user.formulaireCreation" />
+	</definition>	
+
+	<definition name=".user" extends=".layout">
+		<put-attribute name="content" value=".user.home" />
+	</definition>	
+
+
+
+	<!-- Page mot de passe oublié -->
+	<definition name=".mdpforgeted" extends=".layout">
+		<put-attribute name="content" value="/WEB-INF/views/user/mdpforgeted.jsp" />
+	</definition>
+
+	<definition name=".successPopup" template="/WEB-INF/views/layout/successPopup.jsp" />
+	<definition name=".confirmPopup" template="/WEB-INF/views/layout/confirmPopup.jsp" />
+
+	<!-- Sécurisé ci-dessous -->
+	<!-- Entreprises -->
+	<definition name=".listerEntreprise"
+		template="/WEB-INF/views/entreprise/entrepriseLayout.jsp">
+		<put-attribute name="listerEntreprise"
+			value="/WEB-INF/views/entreprise/listeEntreprise.jsp" />
+	</definition>
+
+	<definition name=".compteBanqueEntreprise"
+		template="/WEB-INF/views/entreprise/listeCompteBanqueEntreprise.jsp">
+	</definition>
+
+	<definition name=".addEntreprise"
+		template="/WEB-INF/views/entreprise/creeModifierEntreprise.jsp">
+
+	</definition>
+	<definition name=".addCompteEntreprise"
+		template="/WEB-INF/views/entreprise/creeModifierCompteEntreprise.jsp">
+	</definition>
+
+	<definition name=".entreprise" extends=".layout">
+		<put-attribute name="content" value=".entreprise.home" />
+	</definition>
+
+	<definition name=".entreprise.home"
+		template="/WEB-INF/views/entreprise/entrepriseLayout.jsp">
+		<put-attribute name="entreprise"
+			value="/WEB-INF/views/entreprise/entreprise.jsp" />
+		<put-attribute name="detailEntreprise"
+			value="/WEB-INF/views/entreprise/formulaireCreationEntreprise.jsp" />
+	</definition>
+
+	<definition name=".formulaireCreationEntreprise"
+		template="/WEB-INF/views/entreprise/entrepriseLayout.jsp">
+		<put-attribute name="entreprise"
+			value="/WEB-INF/views/entreprise/entreprise.jsp" />
+		<put-attribute name="detailEntreprise"
+			value="/WEB-INF/views/entreprise/formulaireCreationEntreprise.jsp" />
+	</definition>
+
+	<definition name=".formulaireModificationEntreprise"
+		template="/WEB-INF/views/entreprise/entrepriseLayout.jsp">
+		<put-attribute name="entreprise"
+			value="/WEB-INF/views/entreprise/entreprise.jsp" />
+		<put-attribute name="detailEntreprise"
+			value="/WEB-INF/views/entreprise/formulaireModificationEntreprise.jsp" />
+	</definition>
+
+	<definition name=".formulaireNouveauCompteBancaire"
+		template="/WEB-INF/views/entreprise/formulaireNouveauxCompteBancaire.jsp">
+	</definition>
+
+	<definition name=".formulaireModificationCompteBancaire"
+		template="/WEB-INF/views/entreprise/formulaireModifierCompteBancaire.jsp">
+	</definition>
+
+	<definition name=".signatureEntreprise"
+		template="/WEB-INF/views/entreprise/signatureEntreprise.jsp">
+	</definition>
+
+	<!-- Devant cheque -->
+	<definition name=".devantCheque" extends=".layout">
+		<put-attribute name="content"
+			value="/WEB-INF/views/devantCheque/devantCheque.jsp" />
+	</definition>
+
+	<definition name=".signature" template="/WEB-INF/views/devantCheque/signature.jsp" />
+	<definition name=".visuSignature"
+		template="/WEB-INF/views/devantCheque/visuSignature.jsp" />
+	<definition name=".barrCompteBanqueEntreprise"
+		template="/WEB-INF/views/devantCheque/barrCompteBanqueEntreprise.jsp" />
+
+	<definition name=".devantChequebanque"
+		template="/WEB-INF/views/devantCheque/devantCheque.jsp">
+	</definition>
+
+	<!--Beneficiaire -->
+	<definition name=".beneficiaire.formulaireCreation"
+		template="/WEB-INF/views/beneficiaire/formulaireCreationBeneficiaire.jsp">
+	</definition>
+	<definition name=".beneficiaire.formulaireModification"
+		template="/WEB-INF/views/beneficiaire/formulaireModificationBeneficiaire.jsp">
+	</definition>
+
+	<definition name=".beneficiaire.home" template="/WEB-INF/views/beneficiaire/beneficiaireLayout.jsp">
+		<put-attribute name="beneficiaire"
+			value="/WEB-INF/views/beneficiaire/beneficiaire.jsp" />
+		<put-attribute name="detailBeneficiaire"
+			value=".beneficiaire.formulaireCreation" />
+	</definition>	
+
+	<definition name=".beneficiaire" extends=".layout">
+		<put-attribute name="content" value=".beneficiaire.home" />
+	</definition>	
+	
+	<!--Banque -->
+	<definition name=".banque.formulaireCreation"
+		template="/WEB-INF/views/banque/formulaireCreationBanque.jsp">
+	</definition>
+	<definition name=".banque.formulaireModification"
+		template="/WEB-INF/views/banque/formulaireModificationBanque.jsp">
+	</definition>
+	<definition name=".banque.home" template="/WEB-INF/views/banque/banqueLayout.jsp">
+		<put-attribute name="banque" value="/WEB-INF/views/banque/banque.jsp" />
+		<put-attribute name="detailBanque"
+			value=".banque.formulaireCreation" />
+	</definition>
+	<definition name=".banque" extends=".layout">
+		<put-attribute name="content" value=".banque.home" />
+	</definition>
+	
+	<!--Archives -->
+	<definition name=".archive" extends=".layout">
+		<put-attribute name="content" value="/WEB-INF/views/archive/listerArchives.jsp" />
+	</definition>
+
+	<definition name=".rechercheArchive" extends=".layout">
+		<put-attribute name="content" value="/WEB-INF/views/archive/recherchAvancHistorique.jsp" />
+	</definition>
+	
+
+</tiles-definitions>
