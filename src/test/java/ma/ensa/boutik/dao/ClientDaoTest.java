@@ -8,6 +8,11 @@ import ma.ensa.boutik.domain.Client;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
+/**
+ * Client dao test.
+ * @author dmarghi
+ *
+ */
 public class ClientDaoTest extends AbstractDbUnitEnabledTest {
 
 	@Autowired
