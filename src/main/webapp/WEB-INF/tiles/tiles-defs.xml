@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<!DOCTYPE tiles-definitions PUBLIC
-       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
-       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+
 <tiles-definitions>
 
 	<!-- Template de chaque page de l'application -->
@@ -36,7 +35,12 @@
 
 	<!--Ajouter Articles  -->
 	<definition name=".ajouArticle" extends=".layout">
-		<put-attribute name="content" value="/WEB-INF/views/articles/AjouArticle.jsp" />
+		<put-attribute name="content">
+			<definition template="/WEB-INF/views/articles/AjouArticle.jsp">
+				<put-attribute name="popUp" value="/WEB-INF/views/layout/confirmPopup.jsp" />
+			</definition>
+		</put-attribute>
+		
 	</definition>
 	
 	<!--Modifier Articles  -->
