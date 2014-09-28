@@ -6,7 +6,7 @@
 
 <div class="divForm">
 	<form:form id="formID" class="formular" method="POST"
-		modelAttribute="article" action="actionAjouArticle" onsubmit="return false;">
+		modelAttribute="article" action="actionAjouArticle">
 		<table>
 			<tr>
 				<td>Référence</td>

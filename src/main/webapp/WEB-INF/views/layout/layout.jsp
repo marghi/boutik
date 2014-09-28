@@ -6,49 +6,49 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<%@page pageEncoding="UTF-8" contentType="text/html; charset=UTF-8"%>
 	
-	<link rel="stylesheet" type="text/css" href="<c:url value="/resources/css/theme/theme.css" />" media="all" />
-	<link rel="stylesheet" type="text/css" href="<c:url value="/resources/css/jquery.fileupload-ui.css" />" media="all" />
-	<link rel="stylesheet" type="text/css" href="<c:url value="/resources/css/style.css" />" media="all" />
-	<link rel="stylesheet" type="text/css" href="<c:url value="/resources/css/layout/layout.css" />" media="all" />
-	<link rel="stylesheet" type="text/css" href="<c:url value="/resources/css/datatable/datatable.css" />" media="all" />
-	<link rel="stylesheet" type="text/css" href="<c:url value="/resources/css/calendar/calendar-win2k-cold-1.css" />" media="all" />
-	<link rel="stylesheet" type="text/css" href="<c:url value="/resources/css/validationEngine.jquery.css" />" media="all" />
-	<link rel="stylesheet" type="text/css" href="<c:url value="/resources/css/template.css" />" media="all" />
-		
-	<script type="text/javascript" src="<c:url value="/resources/js/jquery-1.6.2.min.js" />"></script>
-	<script type="text/javascript" src="<c:url value="/resources/js/jquery.dataTables.js" />"></script>
-	<script type="text/javascript" src="<c:url value="/resources/js/jquery.validate.min.js" />"></script>
-	<script type="text/javascript" src="<c:url value="/resources/js/ajaxfileupload.js" />"></script>
-	<script type="text/javascript" src="<c:url value="/resources/js/jquery.simplemodal.1.4.1.min.js" />"></script>
-	<script type="text/javascript" src="<c:url value="/resources/js/default.js" />"></script>
-	<script type="text/javascript" src="<c:url value="/resources/js/jquery-ui-1.8.16.custom.min.js" />"></script>
-	<script type="text/javascript" src="<c:url value="/resources/js/jquery.validate.min.js" />"></script>
-	<script type="text/javascript" src="<c:url value="/resources/js/jquery.simplemodal.1.4.1.min.js" />"></script>
-	<script type="text/javascript" src="<c:url value="/resources/js/refresh.js" />"></script>
-	<script type="text/javascript" src="<c:url value="/resources/js/date-jequery/calendar.js" />"></script>
-	<script type="text/javascript" src="<c:url value="/resources/js/date-jequery/calendar-setup.js" />"></script>
-	<script type="text/javascript" src="<c:url value="/resources/js/date-jequery/calendar-en.js" />"></script>
-	<script type="text/javascript" src="<c:url value="/resources/js/controlDate/jquery.validate.js" />"></script>
 	
-	<script type="text/javascript" src="<c:url value="/resources/js/devantCheque/devantCheque.js" />"></script>
-	<script type="text/javascript" src="<c:url value="/resources/js/devantCheque/scriptMoney.js" />"></script>
-	<script type="text/javascript" src="<c:url value="/resources/js/banque/banque.js" />"></script>
-	<script type="text/javascript" src="<c:url value="/resources/js/beneficiaire/beneficiaire.js" />"></script>
-	<script type="text/javascript" src="<c:url value="/resources/js/entreprise/entreprise.js" />"></script>
-	<script type="text/javascript" src="<c:url value="/resources/js/archive/archive.js" />"></script>
-	<script type="text/javascript" src="<c:url value="/resources/js/user/user.js" />"></script>
-	<script type="text/javascript" src="<c:url value="/resources/js/jquery.js" />"></script>
-	<script type="text/javascript" src="<c:url value="/resources/js/jquery.validationEngine-fr.js" />"></script>
-	<script type="text/javascript" src="<c:url value="/resources/js/jquery.validationEngine.js" />"></script>
+	<link rel="SHORTCUT ICON" href="/resources/img/icone.ico">
+	<link rel="stylesheet" type="text/css" href="<c:url value="/resources/css/bootstrap.min.css" />" media="all" />
+	<link rel="stylesheet" type="text/css" href="<c:url value="/resources/css/style.css" />" media="all" />
+   <link rel="stylesheet" type="text/css" href="<c:url value="/resources/css/wizard.css" />" media="all" />
+   <link rel="stylesheet" type="text/css" href="<c:url value="/resources/css/datepicker.css" />" media="all" />
+   <link rel="stylesheet" type="text/css" href="<c:url value="/resources/css/select2.css" />" media="all" />
+   <link rel="stylesheet" type="text/css" href="<c:url value="/resources/css/introjs.css" />" media="all" />
+   <link rel="stylesheet" type="text/css" href="<c:url value="/resources/css/listeTables.css" />" media="all" />
+
+   <link rel="stylesheet" type="text/css" href="<c:url value="/resources/img/flags/flags.css" />" media="all" />
+   <link rel="stylesheet" type="text/css" href="<c:url value="/resources/css/pines/jquery.pnotify.default.css" />" media="all" />
+   <link rel="stylesheet" type="text/css" href="<c:url value="/resources/css/nprogress.css" />" media="all" />
+   <link rel="stylesheet" type="text/css" href="<c:url value="/resources/js/lib/browser-detection/browser-detection.css" />" media="all" />   
+	<!--[if IE 8]>
+		 <link href="/entreprise/resources/css/ie7.css" rel="stylesheet" />
+	<![endif]-->
+	
+	
+
+    <script async="" src="../../www.google-analytics.com/analytics.js"></script>
+    <script type="text/javascript" src="<c:url value="/resources/js/lib/jquery.js" />"></script>
+	<script type="text/javascript" src="<c:url value="/resources/js/lib/select2.min.js" />"></script>	
+	<script type="text/javascript" src="<c:url value="/resources/js/lib/jquery.dataTables.min.js" />"></script>
+	<script type="text/javascript" src="<c:url value="/resources/js/boostrap-datatables-override.js" />"></script>
+	<script type="text/javascript" src="<c:url value="/resources/js/ebk-utils.js" />"></script>
+	<script type="text/javascript" src="<c:url value="/resources/js/datagrid-manager.js" />"></script>
+	<script type="text/javascript" src="<c:url value="/resources/js/lib/workinprogress.js" />"></script>
+	<script type="text/javascript" src="<c:url value="/resources/js/errorCodeHandler.js" />"></script>
+	<script type="text/javascript" src="<c:url value="/resources/js/moduleDataTables.js" />"></script>
+	<script type="text/javascript" src="<c:url value="/resources/js/lib/nprogress.js" />"></script>
+	<script type="text/javascript" src="<c:url value="/resources/js/lib/browser-detection/browser-detection.js" />"></script>
+
+
 
 
 	</head>
 	<body>
-		<div id="global">
+		<div id="wrap">
 			<div id="header">
 				<tiles:insertAttribute name="header" />
 			</div>
-			<div id="menu">
+			<div >
 				<tiles:insertAttribute name="menu" />
 			</div>
 			<div id="content">
