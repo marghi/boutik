@@ -60,9 +60,10 @@ public class ArticleController {
 	}
 
 	@RequestMapping(value = "ajouArticle", method = RequestMethod.GET)
-	public ModelAndView ajouterArticle(@ModelAttribute("article") Article article) {
+	public ModelAndView ajouterArticle() {
 		modelAndView.addObject("rubriques", rubriqueService.findAll());
 		modelAndView.setViewName(".ajouArticle");
+		modelAndView.addObject("article", new Article());
 		return modelAndView;
 	}
 	
