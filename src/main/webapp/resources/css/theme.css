@@ -1,0 +1,64 @@
+
+
+/*
+* Header 
+*/
+
+body #headerTopBar .navbar-inner{filter:none;background:url("../img/bgd/bg.png") repeat scroll 10% 50% transparent !important;box-shadow: 0 20px 150px #eee}
+b ody #wrap {  background: url("../img/temp/sub-banner-bg.png") no-repeat scroll -120px -30px transparent;--background: -moz-linear-gradient(center top , #EEEEEE 0px, #FFFFFF 75px, #FFFFFF 130px, rgba(255, 255, 255, 0.5) 500px, transparent 100%) repeat scroll 0 0 transparent;}
+b ody #wrap {  background: url("../img/temp/geometric.html") repeat-x scroll -120px -570px transparent;--background: -moz-linear-gradient(center top , #EEEEEE 0px, #FFFFFF 75px, #FFFFFF 130px, rgba(255, 255, 255, 0.5) 500px, transparent 100%) repeat scroll 0 0 transparent;}
+b ody #wrap {  background: url("../img/temp/bg_banner-2.html") repeat-x scroll -120px -170px transparent;--background: -moz-linear-gradient(center top , #EEEEEE 0px, #FFFFFF 75px, #FFFFFF 130px, rgba(255, 255, 255, 0.5) 500px, transparent 100%) repeat scroll 0 0 transparent;}
+
+/*
+* Footer 
+*/
+body #footer{background:#ECECE8;}
+body #footer h5 { color: #EA5B38;}
+
+/*
+* Heading
+*/
+body h1 > span { color: #EA5B38;}
+
+
+/*
+* Accordion
+*/
+body .accordionHeader{background-color:#EA5B38;}
+body .accordion-heading a {color: #EA5B38}
+body .accordionHeader h4 {color: #FFFFFF;}
+
+/*
+* Dropdown
+*/
+body .dropdown-menu >li >a:hover{color:#444;background-color: #eeeeee;background-image: -moz-linear-gradient(top, #f2f2f2, #eeeeee);background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f2f2f2), to(#eeeeee));background-image: -webkit-linear-gradient(top, #f2f2f2, #eeeeee);background-image: -o-linear-gradient(top, #f2f2f2, #eeeeee);background-image: linear-gradient(to bottom, #f2f2f2, #eeeeee);background-repeat: repeat-x;filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff2f2f2', endColorstr='#ffeeeeee', GradientType=0);	}
+
+
+/*
+* Carousel
+*/
+body #carousel .desc .descCont h4 {color: #EA5B38;}
+
+
+/*
+* Menu
+*/
+body .navbar .nav > li > a:hover{color:#EA5B38}
+body .navbar .nav li.dropdown.open > .dropdown-toggle, .navbar .nav li.dropdown.active > .dropdown-toggle, .navbar .nav li.dropdown.open.active > .dropdown-toggle { color: #EA5B38;}
+
+
+/*
+* Block
+*/
+body .block-header:after, body .modal-header::after { background:#DE8F25}
+body .block-header i.icon-header { background-color: #F5F5F5; border: 1px solid #DE8F25 ;}
+body .block-header,  {
+  background-color: #EEEEEE;
+ 
+  background-image: linear-gradient(to bottom, #FEFCFC, #EAE8E8);background-image: -moz-linear-gradient(center top, #FEFCFC, #EAE8E8);background-image: -o-linear-gradient(top, #FEFCFC, #EAE8E8);background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#FEFCFC), to(#EAE8E8) );background-image: -webkit-linear-gradient(top, #FEFCFC, #EAE8E8);background-repeat: repeat-x;border: 1px solid #ccc;border-radius: 6px 6px 0 0;color: #666;display: block;filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffFEFCFC',endColorstr='#ffEAE8E8', GradientType=0 );
+  background-repeat: repeat-x;
+  border: 1px solid #CCCCCC;
+}
+body .block-body { background-color: #fff;}
+body .block-footer { background-color: #f1f1f1;border: 1px solid #ccc;}
+

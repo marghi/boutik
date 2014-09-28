@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Attijarinet Entreprise</title>
+	<meta name="description" content="Attijarinet est un service de banque à distance sur Internet qui vous permet d&#39;accéder à vos comptes et d&#39;effectuer des opérations bancaires 24h/24, 7j/7, en toute sécurité." />
+	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+	<meta http-equiv="X-Frame-Options" content="deny" />
+	
+	<link rel="SHORTCUT ICON" href="/entreprise/resources/img/icone.ico" />
+    <link rel="stylesheet" href="/entreprise/resources/css/bootstrap.min.css" />
+
+	<link rel="stylesheet" href="/entreprise/resources/css/style.css" />
+    
+    <link rel="stylesheet" href="/entreprise/resources/css/wizard.css" />
+    <link rel="stylesheet" href="/entreprise/resources/css/datepicker.css" />
+	<link rel="stylesheet" href="/entreprise/resources/css/select2.css" />
+	<link rel="stylesheet" href="/entreprise/resources/css/introjs.css" />
+	<link rel="stylesheet" href="/entreprise/resources/css/listeTables.css" />
+	<link rel="stylesheet" href="/entreprise/resources/img/flags/flags.css" />
+	<link rel="stylesheet" href="/entreprise/resources/css/pines/jquery.pnotify.default.css" />
+	<link rel="stylesheet" href="/entreprise/resources/css/nprogress.css" />
+	<link rel="stylesheet" href="/entreprise/resources/js/lib/browser-detection/browser-detection.css" /><!--[if IE 8]>
+		 <link href="/entreprise/resources/css/ie7.css" rel="stylesheet" />
+	<![endif]-->
+	
+    
+
+    <script src="/entreprise/resources/js/lib/jquery.js"></script>
+    <script src="/entreprise/resources/js/lib/select2.min.js"></script> 
+	<script src="/entreprise/resources/js/lib/jquery.dataTables.min.js"></script>
+	<script charset="utf-8" src="/entreprise/resources/js/boostrap-datatables-override.js"></script>
+	<script src="/entreprise/resources/js/ebk-utils.js"></script>
+	<script src="/entreprise/resources/js/datagrid-manager.js"></script> 
+	<script src="/entreprise/resources/js/lib/workinprogress.js"></script>
+	<script src="/entreprise/resources/js/lib/intro.js"></script>
+	<script src="/entreprise/resources/js/errorCodeHandler.js"></script>
+	<script src="/entreprise/resources/js/moduleDataTables.js"></script>
+	<script charset="utf-8" src="/entreprise/resources/js/lib/nprogress.js"></script>
+	<script charset="utf-8" src="/entreprise/resources/js/lib/browser-detection/browser-detection.js"></script>
+
+</head>
+<body lang="fr">
+
+	<div id="wrap">
+	    <div style="">
+	<div id="header" class="gray1">
+		<div class="container">
+			<div class="masthead">
+				<a id="logoAp" style="margin-top:20px;display: inline-block;" href="/entreprise/">
+					<img alt="Attijariwafa bank" src="/entreprise/resources/img/logo.png" />
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+        <div class="container" style="">
+            <div id="main-content" class="row-fluid" style=""><!-- Main Content Goes here -->
+            	
+               	<div>
+	<style type="text/css">
+
+	</style>
+
+	<div id="errorPage" class="row" style="">
+		<p> <b>La page demandée n'existe pas!</b> </p>	
+		<h1>Erreur 404</h1>
+		<br />
+		<a href="#" class="btn btn-inverse"><i class="icon-arrow-left"></i> Retourner à la page d'accueil</a>
+		<div class="clearfix"></div>
+	</div>
+</div>
+               
+            </div>
+        </div>
+        <div id="push">  </div>
+	</div>
+	
+	<div id="footer">
+	<div class="gradient">
+    <div class="container">
+        <div class="footer-links" style="">
+            <div class="row">
+         
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+	
+	
+	<script src="/entreprise/resources/js/lib/bootstrap.min.js"></script> 
+	<script charset="utf-8" src="/entreprise/resources/js/lib/jquery.validate.js"></script> 
+	<script src="/entreprise/resources/js/lib/bootstrap-datepicker.js"></script> 
+	<script charset="utf-8" src="/entreprise/resources/js/lib/bootstrap-datepicker.fr.js"></script> 
+	<script src="/entreprise/resources/js/lib/format.20110630-1100.min.js"></script>
+	<script src="/entreprise/resources/js/pages/hints.js"></script>
+
+	<script type="text/javascript">
+	
+	  	// Initialisation du error Handler AJAX
+    	var awbRestErrorHandling = new AWBRestErrorHandling('\/entreprise\/', '\/entreprise\/404', '\/entreprise\/500');
+	
+		/*<![CDATA[*/
+			$(document).ready(function () {
+				
+				$.ajaxSetup({
+					cache: false
+				});
+				
+				$( document ).ajaxStart(function() {
+					NProgress.start();
+				});
+				$( document ).ajaxStop(function() {
+					NProgress.done();
+				});
+				$(document).ajaxError(function( event, jqXHR, settings, exception ) {
+					NProgress.done();
+					awbRestErrorHandling.getForwardError(jqXHR);
+				});
+			});
+		/*]]>*/
+		
+		// Envoi Google Analytics
+		ga('send', 'pageview');
+		
+	</script>
+
+
+	<div> </div>
+</body>
+</html>

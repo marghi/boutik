@@ -1,0 +1,106 @@
+
+
+.headerWraper{padding-bottom:55px;}
+.block-header{border-bottom-width:1px !important }
+.page-header{padding-left: 0;}
+.page-header h1{font-size:25px;padding:0}
+
+/*
+* Left Menu
+*/
+#leftMenu{}
+
+/*
+* Carousel
+*/
+#carousel{widt h:420px;}
+#carousel .carsouselCont{background:transparent url("../img/bgd/bg.png") repeat scroll 0 0;text-align:center;border:1px solid #ccc;border-radius:6px;padding:10px 6px}
+#carousel .carousel-inner{}
+#carousel .desc{background:#eee;text-align: left; position: relative; top: 20px; border: medium none; left: 0; width: 100%; padding:8px;}
+#carousel .desc .descCont{padding: 0 10px 6px 10px;text-align:left}
+#carousel .desc .descCont h4{color:#EA5B38; cursor:default;margin:0 0 5px;font-size:14px;font-weight:bold;}
+#carousel .desc .descCont .itemDesc{font-size: 13px; cursor:default; margin-right:10px}
+.carousel {margin-bottom: 0px;}
+.carousel .carousel-indicators { right:10px; top: 260px;}
+.carousel .carousel-indicators li {background-color: #CCCCCC;border-radius: 4px;height: 8px; width: 8px;}
+.carousel .carousel-indicators .active { background-color: #555555;}
+.carousel-control { background: none repeat scroll 0 0 #2D2D2D; border-radius: 23px 23px 23px 23px; color: #FFFFFF; font-size: 40px; font-weight: 100; height: 30px; left: 3px; line-height: 25px; margin-top: -20px; position: absolute; text-align: center; top: 40%; width: 30px;}
+.carousel-control.right { left: auto; right: 4px;}
+.carousel #homeC  .carousel-indicators {right: 190px; top: 260px;}
+
+
+/*
+* Login box
+*/
+#loginBox .block-body{padding:0; background-color: #eee}
+#loginBox .alert{border-radius:0;margin-bottom:5px}
+#loginBox .fieldset{padding:30px 15px}
+
+/* 
+* Layout 
+*/
+.row-fluid .span4 {}
+.row-fluid .span7 {width: 64.50%;}
+.form-horizontal .control-label {}
+.form-horizontal .controls { }
+
+/*
+* Menu
+*/
+.navbar .nav > li > a {}
+
+/*
+* Vertical Menu
+*/
+#vertical_menu {width:100%}
+#vertical_menu  div{margin-bottom:8px;border:1px solid #ccc;border-color:rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) #B3B3B3;padding:0 0 0 36px;background: url('../img/icones/prez.png') no-repeat scroll 6px 50% #f5f5f5; border-bottom: 1px solid rgb(204, 204, 204);-webkit-border-radius: 8px;-moz-border-radius: 8px;border-radius: 8px;}
+#vertical_menu  div.prod{background-image: url('../img/icones/prez.png') }
+#vertical_menu  div.prod:hover{background-image: url('../img/icones/prezHover.png') }
+#vertical_menu  div.simul{background-image: url('../img/icones/simul.png') }
+#vertical_menu  div.simul:hover{background-image: url('../img/icones/simulHover.png') }
+#vertical_menu  div.folder{background-image: url('../img/icones/cons.png') }
+#vertical_menu  div.folder:hover{background-image: url('../img/icones/consHover.png') }
+#vertical_menu  div.bourse{background-image: url('../img/icones/bourse.png') }
+#vertical_menu  div.bourse:hover{background-image: url('../img/icones/bourseHover.png') }
+#vertical_menu  div a:hover{text-decoration:none;background:-moz-linear-gradient(center top , #FAFAFA 0%, #E9E9E9 100%) repeat scroll 0 0 transparent}
+#vertical_menu  div a {color:#666;font-size:12px;font-weight:normal;padding: 8px;background-color: #f4f4f4; border-left: 1px solid #ddd; display:table-cell; height: 67px; vertical-align: middle; }
+
+/*
+* Slide Show
+*/
+#carousel .banner{width:99%;height:270px;margin:auto;border:1px solid #bbb}
+#carousel .carousel-caption {padding:8px; background: none repeat scroll 0 0 rgba(45, 45, 45, 0.55);}
+#carousel .carousel-caption .caption{padding: 0 10px; text-align: left}
+#carousel .carousel-caption .caption h4{color: #EA5B38; cursor: default;}
+#carousel .carousel-caption .caption p{font-size: 13px; cursor: default; margin-right: 10px}
+
+/* 
+* Left menu
+*/
+.bs-docs-sidenav{padding:0;width:170px;padding:3px;background-color: #f5f5f5;border:1px solid #e5e5e5}
+.bs-docs-sidenav > li:first-child > a {border-radius: 6px 6px 0 0;}
+.bs-docs-sidenav > li:last-child > a { border-radius: 0 0 6px 6px;}
+.bs-docs-sidenav > li > a {background-color:#fff;color:inherit; border: 1px solid #E5E5E5; display: block; margin: 0 0 -1px; padding: 8px 14px;}
+.bs-docs-sidenav .icon-chevron-right { float: right; margin-right: -6px; margin-top: 2px;opacity: 0.25;}
+.accordion-group {border: 1px solid #CCCCCC;}
+.accordion-heading  a{color:#EA5B38; }
+.accordion-heading  a:hover{text-decoration: none}
+.accordion-inner  a{color:#0099DD}
+.accordion-toggle .icon-chevron-down,.accordion-toggle .icon-chevron-right {float:right;}
+.accordion-toggle .icon-chevron-down{ background-image: url('../img/glyphicons-halflings-orange.png'); background-position:-313px -119px;}
+
+/*
+* Accordion
+*/
+.accordionHeader{background-color:#EC6847;padding:6px;border-radius:5px 5px 0 0;}
+.accordionHeader h4 {color: #fff; margin: 5px; font-size: 15px; font-weight: bold;}
+
+
+/**/
+.table_values th{font-size:12px}
+.table_values  td{font-size:10px;border-top:1px solid #E1E1E1; background-color: #f5f5f5}
+.table_values td.v_name{text-transform: lowercase;}
+#table_devise .arrow{margin-top:5px}
+
+/***/
+#myTab{background-color: #eee; margin:5px 0 0; padding-left:15px}
