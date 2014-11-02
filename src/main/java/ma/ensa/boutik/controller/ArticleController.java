@@ -104,8 +104,7 @@ public class ArticleController {
 	
 		articleService.merge(articleModif); 
 		
-		modelAndView.addObject("message",
-				"Modification effectuer avec succes ! ");
+		modelAndView.addObject("message","Modification effectuer avec succes ! ");
 		return "redirect:/articles";
 	}
 
